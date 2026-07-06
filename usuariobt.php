@@ -119,13 +119,13 @@ $usuarios=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                 <h2 class="modal-title fs-5" id="exampleModalLabel">Nuevo Usuario</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" >X</button>
                             </div>
-                            <form method="POST" id="formulariom" action="crearu.php" enctype="multipart/form-data">
+                            <form method="POST" id="formulariom" action="creeusu.php" enctype="multipart/form-data">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <label for="nombre"><b>Nombre</b></label>
-                                        <input type="text" name="nombre" id="nombre" class="form-control">
+                                        <input type="text" name="nombre" id="nomusu" class="form-control">
                                         <label for="apellido"><b>Apellido</b></label>
-                                        <input type="text" name="apellido" id="apellido" class="form-control">
+                                        <input type="text" name="apellido" id="apeusu" class="form-control">
                                         <label for="usuario"><b>Usuario para inicio de sesión</b></label>
                                         <input type="text" name="usuario" id="usuario" class="form-control">
                                         <div class="row">
@@ -138,8 +138,8 @@ $usuarios=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="col">
                                                 <label for="tipo"><b>Tipo de usuario</b></label>
                                                 <select type="text" name="tipo" id="tipo" class="form-select">
-                                                    <option value="1">Administrador Tipo 1</option>
-                                                    <option value="2">usuario tipo 2</option>
+                                                    <option value="1"> Tipo 1</option>
+                                                    <option value="2"> tipo 2</option>
                                                 </select>
                                             </div>
                                         </div>
